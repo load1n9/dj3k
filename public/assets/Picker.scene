@@ -1,0 +1,98 @@
+{
+    "id": "66af8f4d-1a96-4c18-92f6-4a15c27ea7d2",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "generated",
+        "sceneKey": "Picker",
+        "borderWidth": 2280,
+        "borderHeight": 1440
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "a42301d4-cf8b-4495-b6cd-fcbcfcd4e2f8",
+            "label": "background",
+            "components": [],
+            "texture": {
+                "key": "background"
+            },
+            "x": 1252,
+            "y": 678
+        },
+        {
+            "type": "Image",
+            "id": "1fde7b44-55b6-4639-a555-ce988ba05ac6",
+            "label": "pop",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 980001.png"
+            },
+            "x": 1146,
+            "y": 611,
+            "scaleX": 3
+        },
+        {
+            "type": "Image",
+            "id": "a0426553-22e2-4233-863c-7bad5e80c9d4",
+            "label": "dubstep",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 830001.png"
+            },
+            "x": 1149,
+            "y": 1309,
+            "scaleX": 3
+        },
+        {
+            "type": "Image",
+            "id": "5314560e-6594-4312-8c3d-5de33eecd5e5",
+            "label": "rock",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 780001.png"
+            },
+            "x": 1146,
+            "y": 855,
+            "scaleX": 3
+        },
+        {
+            "type": "Image",
+            "id": "cb263d77-8098-410a-9957-c30f59b02517",
+            "label": "dance",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 930001.png"
+            },
+            "x": 1147,
+            "y": 1086,
+            "scaleX": 3
+        },
+        {
+            "type": "Image",
+            "id": "1c27533b-6a77-4e98-8f4c-dc194d947546",
+            "label": "symbol_4310001_png",
+            "components": [],
+            "texture": {
+                "key": "spritesheet",
+                "frame": "Symbol 4310001.png"
+            },
+            "x": 1174,
+            "y": 224
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType"
+    }
+}

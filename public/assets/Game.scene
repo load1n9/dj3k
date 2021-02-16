@@ -1,0 +1,391 @@
+{
+    "id": "a4dc933f-83fb-4644-9fac-ab8e16d7659e",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "generated",
+        "sceneKey": "Game",
+        "borderWidth": 2280,
+        "borderHeight": 1440
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "ccce8bc0-c7ca-4a4d-9518-362083f9a65e",
+            "label": "gameBackground",
+            "components": [],
+            "texture": {
+                "key": "gameBackground"
+            },
+            "x": 1159,
+            "y": 761
+        },
+        {
+            "type": "Image",
+            "id": "aff8a54b-e037-4483-b94b-8fe4d076643b",
+            "label": "symbol_1400003_png",
+            "components": [],
+            "texture": {
+                "key": "basicgui",
+                "frame": "Symbol 1400003.png"
+            },
+            "x": 215,
+            "y": 312
+        },
+        {
+            "type": "Image",
+            "id": "b1358c0e-c7e6-4705-bdcf-f33a661ceee0",
+            "label": "symbol_450015_png",
+            "components": [],
+            "texture": {
+                "key": "basicgui",
+                "frame": "Symbol 450015.png"
+            },
+            "x": 1396,
+            "y": 149
+        },
+        {
+            "type": "Image",
+            "id": "2decb8b7-8b2f-44a7-b54e-5b7bf0b7013d",
+            "label": "symbol_386_png",
+            "components": [],
+            "texture": {
+                "key": "basicgui",
+                "frame": "Symbol 386.png"
+            },
+            "x": 2244,
+            "y": 48
+        },
+        {
+            "type": "Image",
+            "id": "14240f3d-7061-4105-8a0e-696f3cc363e4",
+            "label": "blue1",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 1030001.png"
+            },
+            "x": 613,
+            "y": 441
+        },
+        {
+            "type": "Image",
+            "id": "3b764f59-e039-4bb4-9838-2f55e15df54f",
+            "label": "blue2",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 1030001.png"
+            },
+            "x": 613,
+            "y": 669
+        },
+        {
+            "type": "Image",
+            "id": "42d3561a-9457-47ae-b620-610316f418bf",
+            "label": "purple1",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 980001.png"
+            },
+            "x": 833,
+            "y": 441
+        },
+        {
+            "type": "Image",
+            "id": "4ae4ca89-5138-4e74-b3ce-54b054ad4a5e",
+            "label": "green1",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 930001.png"
+            },
+            "x": 1053,
+            "y": 441
+        },
+        {
+            "type": "Image",
+            "id": "1d7c83c9-0cd6-473e-a79b-ec3c8e6728f3",
+            "label": "orange1",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 880001.png"
+            },
+            "x": 1273,
+            "y": 441
+        },
+        {
+            "type": "Image",
+            "id": "a5f0b288-9d32-4bb4-941e-e1edf75f5947",
+            "label": "pink1",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 830001.png"
+            },
+            "x": 1493,
+            "y": 441
+        },
+        {
+            "type": "Image",
+            "id": "fd341ebe-14b1-429e-9f08-bea8a2ab9b4e",
+            "label": "blue3",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 1030001.png"
+            },
+            "x": 613,
+            "y": 897
+        },
+        {
+            "type": "Image",
+            "id": "dbc15dc0-8a21-4fda-9294-65111c60701d",
+            "label": "blue4",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 1030001.png"
+            },
+            "x": 613,
+            "y": 1125
+        },
+        {
+            "type": "Image",
+            "id": "1d46f194-40a1-467f-838c-756ea76e42ae",
+            "label": "blue5",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 1030001.png"
+            },
+            "x": 613,
+            "y": 1353
+        },
+        {
+            "type": "Image",
+            "id": "2dd7d370-dc75-4e17-a2b9-ea1e931b8594",
+            "label": "purple2",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 980001.png"
+            },
+            "x": 833,
+            "y": 669
+        },
+        {
+            "type": "Image",
+            "id": "151b9ae7-95e8-4d1f-acaf-47ba9da644b5",
+            "label": "purple3",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 980001.png"
+            },
+            "x": 833,
+            "y": 897
+        },
+        {
+            "type": "Image",
+            "id": "717caf03-1a36-47d6-bcd7-13de91aeb1bf",
+            "label": "purple4",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 980001.png"
+            },
+            "x": 833,
+            "y": 1125
+        },
+        {
+            "type": "Image",
+            "id": "ad0da288-7f93-4441-83fc-9152b863b7ba",
+            "label": "purple5",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 980001.png"
+            },
+            "x": 833,
+            "y": 1353
+        },
+        {
+            "type": "Image",
+            "id": "07abfc53-2cdb-4032-938c-48507057fe11",
+            "label": "green2",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 930001.png"
+            },
+            "x": 1053,
+            "y": 669
+        },
+        {
+            "type": "Image",
+            "id": "7d75975a-62a7-4cae-93f5-942328854fee",
+            "label": "green3",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 930001.png"
+            },
+            "x": 1053,
+            "y": 897
+        },
+        {
+            "type": "Image",
+            "id": "1f0843a3-125f-4f22-b90f-65e86bf35711",
+            "label": "green4",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 930001.png"
+            },
+            "x": 1053,
+            "y": 1125
+        },
+        {
+            "type": "Image",
+            "id": "037a2c03-6d3c-4999-8c91-b2559fe75136",
+            "label": "green5",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 930001.png"
+            },
+            "x": 1053,
+            "y": 1353
+        },
+        {
+            "type": "Image",
+            "id": "bfe92adc-e4a0-45e6-aa2e-45491cbedbd8",
+            "label": "orange2",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 880001.png"
+            },
+            "x": 1273,
+            "y": 669
+        },
+        {
+            "type": "Image",
+            "id": "d4b5b553-a1aa-42cf-895b-757d7586843a",
+            "label": "orange3",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 880001.png"
+            },
+            "x": 1273,
+            "y": 897
+        },
+        {
+            "type": "Image",
+            "id": "88e66cd7-f28c-4b5b-aad8-26fbcdddef99",
+            "label": "orange4",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 880001.png"
+            },
+            "x": 1273,
+            "y": 1125
+        },
+        {
+            "type": "Image",
+            "id": "5803d9f9-4653-48dd-b9ab-cda026fa6a4e",
+            "label": "orange5",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 880001.png"
+            },
+            "x": 1273,
+            "y": 1353
+        },
+        {
+            "type": "Image",
+            "id": "4e4ae140-bcf2-4a8d-8ce2-91510a1f7cd0",
+            "label": "pink2",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 830001.png"
+            },
+            "x": 1493,
+            "y": 669
+        },
+        {
+            "type": "Image",
+            "id": "b8d4a10b-a242-4a4d-b64a-9e03bbec6324",
+            "label": "pink3",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 830001.png"
+            },
+            "x": 1493,
+            "y": 897
+        },
+        {
+            "type": "Image",
+            "id": "184e3231-1519-4eb1-b6b8-79ee3a983b18",
+            "label": "pink4",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 830001.png"
+            },
+            "x": 1493,
+            "y": 1125
+        },
+        {
+            "type": "Image",
+            "id": "9cf97c72-6cc0-4b04-9a1d-65897c679e9a",
+            "label": "pink5",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "buttons",
+                "frame": "Symbol 830001.png"
+            },
+            "x": 1493,
+            "y": 1353
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType"
+    }
+}

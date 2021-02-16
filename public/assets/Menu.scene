@@ -1,0 +1,111 @@
+{
+    "id": "01aefa93-6044-4159-8358-7e91310aa05f",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "generated",
+        "sceneKey": "Menu",
+        "borderWidth": 2280,
+        "borderHeight": 1440
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "9408be98-4225-4dde-890d-dcb426807cec",
+            "label": "background",
+            "components": [],
+            "texture": {
+                "key": "background"
+            },
+            "x": 1207,
+            "y": 687
+        },
+        {
+            "type": "Image",
+            "id": "907820c5-0d51-45b5-ae91-25eeb8b3ab40",
+            "label": "symbol_438_png",
+            "components": [],
+            "texture": {
+                "key": "spritesheet",
+                "frame": "Symbol 438.png"
+            },
+            "x": 1894,
+            "y": 744
+        },
+        {
+            "type": "Image",
+            "id": "d901b39b-18b7-4032-ad35-1a0cda337f4c",
+            "label": "escape",
+            "components": [],
+            "texture": {
+                "key": "spritesheet",
+                "frame": "Symbol 386.png"
+            },
+            "x": 2245,
+            "y": 40
+        },
+        {
+            "type": "Image",
+            "id": "36191ff6-73e6-45f8-8a31-acf4931b4661",
+            "label": "symbol_4310001_png",
+            "components": [],
+            "texture": {
+                "key": "spritesheet",
+                "frame": "Symbol 4310001.png"
+            },
+            "x": 795,
+            "y": 236
+        },
+        {
+            "type": "Image",
+            "id": "902658dc-06e1-4803-9b3e-20763285b75e",
+            "label": "play",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "spritesheet",
+                "frame": "Symbol 367.png"
+            },
+            "x": 773,
+            "y": 604,
+            "scaleX": 2.0756363920561856,
+            "scaleY": 3.1378202501939874
+        },
+        {
+            "type": "Image",
+            "id": "a8427d85-89f5-4458-b4d3-b4c628f38af7",
+            "label": "instructions",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "spritesheet",
+                "frame": "Symbol 367.png"
+            },
+            "x": 779,
+            "y": 904,
+            "scaleX": 1.6152310866024886,
+            "scaleY": 1.9547280492427839
+        },
+        {
+            "type": "Image",
+            "id": "215f7515-7d0b-48f8-b2bb-eaf07c8efc78",
+            "label": "saved",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "spritesheet",
+                "frame": "Symbol 367.png"
+            },
+            "x": 779,
+            "y": 1104,
+            "scaleX": 1.6152310866024886,
+            "scaleY": 1.9547280492427839
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType"
+    }
+}

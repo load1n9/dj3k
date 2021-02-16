@@ -1,0 +1,55 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/Images/Menu/background.png",
+                "type": "image",
+                "key": "background"
+            },
+            {
+                "atlasURL": "assets/Images/Game/basicgui.json",
+                "textureURL": "assets/Images/Game/basicgui.png",
+                "type": "atlas",
+                "key": "basicgui"
+            },
+            {
+                "atlasURL": "assets/Images/buttons.json",
+                "textureURL": "assets/Images/buttons.png",
+                "type": "atlas",
+                "key": "buttons"
+            },
+            {
+                "url": "assets/Game.js",
+                "type": "sceneFile",
+                "key": "Game"
+            },
+            {
+                "url": "assets/Images/Game/background.png",
+                "type": "image",
+                "key": "gameBackground"
+            },
+            {
+                "url": "assets/Menu.js",
+                "type": "sceneFile",
+                "key": "Menu"
+            },
+            {
+                "url": "assets/Picker.js",
+                "type": "sceneFile",
+                "key": "Picker"
+            },
+            {
+                "atlasURL": "assets/Images/Menu/spritesheet.json",
+                "textureURL": "assets/Images/Menu/spritesheet.png",
+                "type": "atlas",
+                "key": "spritesheet"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2
+    }
+}
