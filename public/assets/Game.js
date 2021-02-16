@@ -373,36 +373,61 @@ class Game extends Phaser.Scene {
 		this.orange1.setInteractive().on("pointerup",()=> {
 			if(this.orange1.frame.name === "Symbol 880001.png") {
 				this.orange1.setFrame("Symbol 880002.png")
+				this.orange1sound  = this.sound.add(`${this.genre}orange1`, {
+					loop:true
+				});
+				this.orange1sound.play()
 			} else {
+				this.orange1sound.stop()
 				this.orange1.setFrame("Symbol 880001.png")
 			}
 		},this)
 		this.orange2.setInteractive().on("pointerup",()=> {
 			if(this.orange2.frame.name === "Symbol 880001.png") {
 				this.orange2.setFrame("Symbol 880002.png")
+				this.orange2sound  = this.sound.add(`${this.genre}orange2`, {
+					loop:true
+				});
+				this.orange2sound.play()
 			} else {
 				this.orange2.setFrame("Symbol 880001.png")
+				this.orange2sound.stop()
 			}
 		},this)
 		this.orange3.setInteractive().on("pointerup",()=> {
 			if(this.orange3.frame.name === "Symbol 880001.png") {
 				this.orange3.setFrame("Symbol 880002.png")
+				this.orange3sound  = this.sound.add(`${this.genre}orange3`, {
+					loop:true
+				});
+				this.orange3sound.play()
 			} else {
 				this.orange3.setFrame("Symbol 880001.png")
+				this.orange3sound.stop()
 			}
 		},this)
 		this.orange4.setInteractive().on("pointerup",()=> {
 			if(this.orange4.frame.name === "Symbol 880001.png") {
 				this.orange4.setFrame("Symbol 880002.png")
+				this.orange4sound  = this.sound.add(`${this.genre}orange4`, {
+					loop:true
+				});
+				this.orange4sound.play()
 			} else {
 				this.orange4.setFrame("Symbol 880001.png")
+				this.orange4sound.stop()
 			}
 		},this)
 		this.orange5.setInteractive().on("pointerup",()=> {
 			if(this.orange5.frame.name === "Symbol 880001.png") {
 				this.orange5.setFrame("Symbol 880002.png")
+				this.orange5sound  = this.sound.add(`${this.genre}orange5`, {
+					loop:true
+				});
+				this.orange5sound.play()
 			} else {
 				this.orange5.setFrame("Symbol 880001.png")
+				this.orange5sound.stop()
 			}
 		},this)
 	}

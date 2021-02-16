@@ -13,10 +13,45 @@
                 "key": "basicgui"
             },
             {
+                "url": [
+                    "assets/Sound/dance/blue4.mp3"
+                ],
+                "type": "audio",
+                "key": "danceblue4"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/blue5.mp3"
+                ],
+                "type": "audio",
+                "key": "danceblue5"
+            },
+            {
                 "atlasURL": "assets/Images/buttons.json",
                 "textureURL": "assets/Images/buttons.png",
                 "type": "atlas",
                 "key": "buttons"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/blue1.mp3"
+                ],
+                "type": "audio",
+                "key": "danceblue1"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/blue2.mp3"
+                ],
+                "type": "audio",
+                "key": "danceblue2"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/blue3.mp3"
+                ],
+                "type": "audio",
+                "key": "danceblue3"
             },
             {
                 "url": "assets/Images/Game/dubstep.png",
@@ -34,9 +69,79 @@
                 "key": "gameBackground"
             },
             {
+                "url": [
+                    "assets/Sound/dance/green1.mp3"
+                ],
+                "type": "audio",
+                "key": "dancegreen1"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/green2.mp3"
+                ],
+                "type": "audio",
+                "key": "dancegreen2"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/green3.mp3"
+                ],
+                "type": "audio",
+                "key": "dancegreen3"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/green4.mp3"
+                ],
+                "type": "audio",
+                "key": "dancegreen4"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/green5.mp3"
+                ],
+                "type": "audio",
+                "key": "dancegreen5"
+            },
+            {
                 "url": "assets/Menu.js",
                 "type": "sceneFile",
                 "key": "Menu"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/orange1.mp3"
+                ],
+                "type": "audio",
+                "key": "danceorange1"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/orange2.mp3"
+                ],
+                "type": "audio",
+                "key": "danceorange2"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/orange3.mp3"
+                ],
+                "type": "audio",
+                "key": "danceorange3"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/orange4.mp3"
+                ],
+                "type": "audio",
+                "key": "danceorange4"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/orange5.mp3"
+                ],
+                "type": "audio",
+                "key": "danceorange5"
             },
             {
                 "url": "assets/Picker.js",
@@ -44,9 +149,79 @@
                 "key": "Picker"
             },
             {
+                "url": [
+                    "assets/Sound/dance/pink1.mp3"
+                ],
+                "type": "audio",
+                "key": "dancepink1"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/pink2.mp3"
+                ],
+                "type": "audio",
+                "key": "dancepink2"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/pink3.mp3"
+                ],
+                "type": "audio",
+                "key": "dancepink3"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/pink4.mp3"
+                ],
+                "type": "audio",
+                "key": "dancepink4"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/pink5.mp3"
+                ],
+                "type": "audio",
+                "key": "dancepink5"
+            },
+            {
                 "url": "assets/Images/Game/pop.png",
                 "type": "image",
                 "key": "pop"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/purple1.mp3"
+                ],
+                "type": "audio",
+                "key": "dancepurple1"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/purple2.mp3"
+                ],
+                "type": "audio",
+                "key": "dancepurple2"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/purple3.mp3"
+                ],
+                "type": "audio",
+                "key": "dancepurple3"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/purple4.mp3"
+                ],
+                "type": "audio",
+                "key": "dancepurple4"
+            },
+            {
+                "url": [
+                    "assets/Sound/dance/purple5.mp3"
+                ],
+                "type": "audio",
+                "key": "dancepurple5"
             },
             {
                 "url": "assets/Images/Game/rock.png",
