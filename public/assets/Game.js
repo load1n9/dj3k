@@ -209,6 +209,7 @@ class Game extends Phaser.Scene {
 				this.setupDance()
 				break;
 		}
+		this.setupButtons()
 		this.exit.setInteractive()
 		this.exit.on("pointerup",()=> {
 			this.game.sound.stopAll();
@@ -227,6 +228,183 @@ class Game extends Phaser.Scene {
 	}
 	setupRock() {
 		this.icons.setTexture("rock")
+	}
+	setupButtons() {
+		this.blue1.setInteractive().on("pointerup",()=> {
+			if(this.blue1.frame.name === "Symbol 1030001.png") {
+				this.blue1.setFrame("Symbol 1030002.png")
+			} else {
+				this.blue1.setFrame("Symbol 1030001.png")
+			}
+		},this)
+		this.blue2.setInteractive().on("pointerup",()=> {
+			if(this.blue2.frame.name === "Symbol 1030001.png") {
+				this.blue2.setFrame("Symbol 1030002.png")
+			} else {
+				this.blue2.setFrame("Symbol 1030001.png")
+			}
+		},this)
+		this.blue3.setInteractive().on("pointerup",()=> {
+			if(this.blue3.frame.name === "Symbol 1030001.png") {
+				this.blue3.setFrame("Symbol 1030002.png")
+			} else {
+				this.blue3.setFrame("Symbol 1030001.png")
+			}
+		},this)
+		this.blue4.setInteractive().on("pointerup",()=> {
+			if(this.blue4.frame.name === "Symbol 1030001.png") {
+				this.blue4.setFrame("Symbol 1030002.png")
+			} else {
+				this.blue4.setFrame("Symbol 1030001.png")
+			}
+		},this)
+		this.blue5.setInteractive().on("pointerup",()=> {
+			if(this.blue5.frame.name === "Symbol 1030001.png") {
+				this.blue5.setFrame("Symbol 1030002.png")
+			} else {
+				this.blue5.setFrame("Symbol 1030001.png")
+			}
+		},this)
+		this.green1.setInteractive().on("pointerup",()=> {
+			if(this.green1.frame.name === "Symbol 930001.png") {
+				this.green1.setFrame("Symbol 930002.png")
+			} else {
+				this.green1.setFrame("Symbol 930001.png")
+			}
+		},this)
+		this.green2.setInteractive().on("pointerup",()=> {
+			if(this.green2.frame.name === "Symbol 930001.png") {
+				this.green2.setFrame("Symbol 930002.png")
+			} else {
+				this.green2.setFrame("Symbol 930001.png")
+			}
+		},this)
+		this.green3.setInteractive().on("pointerup",()=> {
+			if(this.green3.frame.name === "Symbol 930001.png") {
+				this.green3.setFrame("Symbol 930002.png")
+			} else {
+				this.green3.setFrame("Symbol 930001.png")
+			}
+		},this)
+		this.green4.setInteractive().on("pointerup",()=> {
+			if(this.green4.frame.name === "Symbol 930001.png") {
+				this.green4.setFrame("Symbol 930002.png")
+			} else {
+				this.green4.setFrame("Symbol 930001.png")
+			}
+		},this)
+		this.green5.setInteractive().on("pointerup",()=> {
+			if(this.green5.frame.name === "Symbol 930001.png") {
+				this.green5.setFrame("Symbol 930002.png")
+			} else {
+				this.green5.setFrame("Symbol 930001.png")
+			}
+		},this)
+		this.purple1.setInteractive().on("pointerup",()=> {
+			if(this.purple1.frame.name === "Symbol 980001.png") {
+				this.purple1.setFrame("Symbol 980002.png")
+			} else {
+				this.purple1.setFrame("Symbol 980001.png")
+			}
+		},this)
+		this.purple2.setInteractive().on("pointerup",()=> {
+			if(this.purple2.frame.name === "Symbol 980001.png") {
+				this.purple2.setFrame("Symbol 980002.png")
+			} else {
+				this.purple2.setFrame("Symbol 980001.png")
+			}
+		},this)
+		this.purple3.setInteractive().on("pointerup",()=> {
+			if(this.purple3.frame.name === "Symbol 980001.png") {
+				this.purple3.setFrame("Symbol 980002.png")
+			} else {
+				this.purple3.setFrame("Symbol 980001.png")
+			}
+		},this)
+		this.purple4.setInteractive().on("pointerup",()=> {
+			if(this.purple4.frame.name === "Symbol 980001.png") {
+				this.purple4.setFrame("Symbol 980002.png")
+			} else {
+				this.purple4.setFrame("Symbol 980001.png")
+			}
+		},this)
+		this.purple5.setInteractive().on("pointerup",()=> {
+			if(this.purple5.frame.name === "Symbol 980001.png") {
+				this.purple5.setFrame("Symbol 980002.png")
+			} else {
+				this.purple5.setFrame("Symbol 980001.png")
+			}
+		},this)
+		this.pink1.setInteractive().on("pointerup",()=> {
+			if(this.pink1.frame.name === "Symbol 830001.png") {
+				this.pink1.setFrame("Symbol 830002.png")
+			} else {
+				this.pink1.setFrame("Symbol 830001.png")
+			}
+		},this)
+		this.pink2.setInteractive().on("pointerup",()=> {
+			if(this.pink2.frame.name === "Symbol 830001.png") {
+				this.pink2.setFrame("Symbol 830002.png")
+			} else {
+				this.pink2.setFrame("Symbol 830001.png")
+			}
+		},this)
+		this.pink3.setInteractive().on("pointerup",()=> {
+			if(this.pink3.frame.name === "Symbol 830001.png") {
+				this.pink3.setFrame("Symbol 830002.png")
+			} else {
+				this.pink3.setFrame("Symbol 830001.png")
+			}
+		},this)
+		this.pink4.setInteractive().on("pointerup",()=> {
+			if(this.pink4.frame.name === "Symbol 830001.png") {
+				this.pink4.setFrame("Symbol 830002.png")
+			} else {
+				this.pink4.setFrame("Symbol 830001.png")
+			}
+		},this)
+		this.pink5.setInteractive().on("pointerup",()=> {
+			if(this.pink5.frame.name === "Symbol 830001.png") {
+				this.pink5.setFrame("Symbol 830002.png")
+			} else {
+				this.pink5.setFrame("Symbol 830001.png")
+			}
+		},this)
+		this.orange1.setInteractive().on("pointerup",()=> {
+			if(this.orange1.frame.name === "Symbol 880001.png") {
+				this.orange1.setFrame("Symbol 880002.png")
+			} else {
+				this.orange1.setFrame("Symbol 880001.png")
+			}
+		},this)
+		this.orange2.setInteractive().on("pointerup",()=> {
+			if(this.orange2.frame.name === "Symbol 880001.png") {
+				this.orange2.setFrame("Symbol 880002.png")
+			} else {
+				this.orange2.setFrame("Symbol 880001.png")
+			}
+		},this)
+		this.orange3.setInteractive().on("pointerup",()=> {
+			if(this.orange3.frame.name === "Symbol 880001.png") {
+				this.orange3.setFrame("Symbol 880002.png")
+			} else {
+				this.orange3.setFrame("Symbol 880001.png")
+			}
+		},this)
+		this.orange4.setInteractive().on("pointerup",()=> {
+			if(this.orange4.frame.name === "Symbol 880001.png") {
+				this.orange4.setFrame("Symbol 880002.png")
+			} else {
+				this.orange4.setFrame("Symbol 880001.png")
+			}
+		},this)
+		this.orange5.setInteractive().on("pointerup",()=> {
+			if(this.orange5.frame.name === "Symbol 880001.png") {
+				this.orange5.setFrame("Symbol 880002.png")
+			} else {
+				this.orange5.setFrame("Symbol 880001.png")
+			}
+		},this)
 	}
 
 	/* END-USER-CODE */
