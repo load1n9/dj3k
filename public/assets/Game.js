@@ -9,6 +9,8 @@ class Game extends Phaser.Scene {
 		super("Game");
 		
 		/** @type {Phaser.GameObjects.Image} */
+		this.exit;
+		/** @type {Phaser.GameObjects.Image} */
 		this.blue1;
 		/** @type {Phaser.GameObjects.Image} */
 		this.blue2;
@@ -58,6 +60,8 @@ class Game extends Phaser.Scene {
 		this.pink4;
 		/** @type {Phaser.GameObjects.Image} */
 		this.pink5;
+		/** @type {Phaser.GameObjects.Image} */
+		this.icons;
 		
 		/* START-USER-CTR-CODE */
 		// Write your code here.
@@ -75,8 +79,8 @@ class Game extends Phaser.Scene {
 		// symbol_450015_png
 		this.add.image(1396, 149, "basicgui", "Symbol 450015.png");
 		
-		// symbol_386_png
-		this.add.image(2244, 48, "basicgui", "Symbol 386.png");
+		// exit
+		const exit = this.add.image(2244, 48, "basicgui", "Symbol 386.png");
 		
 		// blue1
 		const blue1 = this.add.image(613, 441, "buttons", "Symbol 1030001.png");
@@ -153,6 +157,10 @@ class Game extends Phaser.Scene {
 		// pink5
 		const pink5 = this.add.image(1493, 1353, "buttons", "Symbol 830001.png");
 		
+		// icons
+		const icons = this.add.image(1388, 887, "dubstep");
+		
+		this.exit = exit;
 		this.blue1 = blue1;
 		this.blue2 = blue2;
 		this.purple1 = purple1;
@@ -178,6 +186,7 @@ class Game extends Phaser.Scene {
 		this.pink3 = pink3;
 		this.pink4 = pink4;
 		this.pink5 = pink5;
+		this.icons = icons;
 	}
 	
 	/* START-USER-CODE */
@@ -186,6 +195,38 @@ class Game extends Phaser.Scene {
 	init(data) {
 		this.genre = data.genre
 		this.generated()
+		switch (this.genre) {
+			case "dubstep":
+				this.setupDubstep()
+				break;
+			case "rock":
+				this.setupRock()
+				break;
+			case "pop":
+				this.setupPop()
+				break;
+			case "dance":
+				this.setupDance()
+				break;
+		}
+		this.exit.setInteractive()
+		this.exit.on("pointerup",()=> {
+			this.game.sound.stopAll();
+			this.scene.start("Menu")
+		},this)
+	}
+
+	setupDance() {
+		this.icons.setTexture("pop")
+	}
+	setupPop() {
+		this.icons.setTexture("pop")
+	}
+	setupDubstep() {
+		this.icons.setTexture("dubstep")
+	}
+	setupRock() {
+		this.icons.setTexture("rock")
 	}
 
 	/* END-USER-CODE */

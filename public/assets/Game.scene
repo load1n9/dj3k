@@ -47,7 +47,8 @@
         {
             "type": "Image",
             "id": "2decb8b7-8b2f-44a7-b54e-5b7bf0b7013d",
-            "label": "symbol_386_png",
+            "label": "exit",
+            "scope": "PUBLIC",
             "components": [],
             "texture": {
                 "key": "basicgui",
@@ -380,6 +381,18 @@
             },
             "x": 1493,
             "y": 1353
+        },
+        {
+            "type": "Image",
+            "id": "251dbda3-e58d-4981-a512-8c9365864684",
+            "label": "icons",
+            "scope": "PUBLIC",
+            "components": [],
+            "texture": {
+                "key": "dubstep"
+            },
+            "x": 1388,
+            "y": 887
         }
     ],
     "plainObjects": [],

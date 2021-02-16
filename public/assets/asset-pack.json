@@ -19,6 +19,11 @@
                 "key": "buttons"
             },
             {
+                "url": "assets/Images/Game/dubstep.png",
+                "type": "image",
+                "key": "dubstep"
+            },
+            {
                 "url": "assets/Game.js",
                 "type": "sceneFile",
                 "key": "Game"
@@ -37,6 +42,21 @@
                 "url": "assets/Picker.js",
                 "type": "sceneFile",
                 "key": "Picker"
+            },
+            {
+                "url": "assets/Images/Game/pop.png",
+                "type": "image",
+                "key": "pop"
+            },
+            {
+                "url": "assets/Images/Game/rock.png",
+                "type": "image",
+                "key": "rock"
+            },
+            {
+                "url": "assets/Images/Game/spooky.png",
+                "type": "image",
+                "key": "spooky"
             },
             {
                 "atlasURL": "assets/Images/Menu/spritesheet.json",
