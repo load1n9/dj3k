@@ -233,140 +233,241 @@ class Game extends Phaser.Scene {
 		this.blue1.setInteractive().on("pointerup",()=> {
 			if(this.blue1.frame.name === "Symbol 1030001.png") {
 				this.blue1.setFrame("Symbol 1030002.png")
+				this.blue1sound  = this.sound.add(`${this.genre}blue1`, {
+					loop:true
+				});
+				this.blue1sound.play()
 			} else {
 				this.blue1.setFrame("Symbol 1030001.png")
+				this.blue1sound.stop()
 			}
 		},this)
 		this.blue2.setInteractive().on("pointerup",()=> {
 			if(this.blue2.frame.name === "Symbol 1030001.png") {
 				this.blue2.setFrame("Symbol 1030002.png")
+				this.blue2sound  = this.sound.add(`${this.genre}blue2`, {
+					loop:true
+				});
+				this.blue2sound.play()
 			} else {
 				this.blue2.setFrame("Symbol 1030001.png")
+				this.blue2sound.stop()
 			}
 		},this)
 		this.blue3.setInteractive().on("pointerup",()=> {
 			if(this.blue3.frame.name === "Symbol 1030001.png") {
 				this.blue3.setFrame("Symbol 1030002.png")
+				this.blue3sound  = this.sound.add(`${this.genre}blue3`, {
+					loop:true
+				});
+				this.blue3sound.play()
 			} else {
 				this.blue3.setFrame("Symbol 1030001.png")
+				this.blue3sound.stop()
 			}
 		},this)
 		this.blue4.setInteractive().on("pointerup",()=> {
 			if(this.blue4.frame.name === "Symbol 1030001.png") {
 				this.blue4.setFrame("Symbol 1030002.png")
+				this.blue4sound  = this.sound.add(`${this.genre}blue4`, {
+					loop:true
+				});
+				this.blue4sound.play()
 			} else {
 				this.blue4.setFrame("Symbol 1030001.png")
+				this.blue4sound.stop()
 			}
 		},this)
 		this.blue5.setInteractive().on("pointerup",()=> {
 			if(this.blue5.frame.name === "Symbol 1030001.png") {
 				this.blue5.setFrame("Symbol 1030002.png")
+				this.blue5sound  = this.sound.add(`${this.genre}blue5`, {
+					loop:true
+				});
+				this.blue5sound.play()
 			} else {
 				this.blue5.setFrame("Symbol 1030001.png")
+				this.blue5sound.stop()
 			}
 		},this)
 		this.green1.setInteractive().on("pointerup",()=> {
 			if(this.green1.frame.name === "Symbol 930001.png") {
 				this.green1.setFrame("Symbol 930002.png")
+				this.green1sound  = this.sound.add(`${this.genre}green1`, {
+					loop:true
+				});
+				this.green1sound.play()
 			} else {
 				this.green1.setFrame("Symbol 930001.png")
+				this.green1sound.stop()
 			}
 		},this)
 		this.green2.setInteractive().on("pointerup",()=> {
 			if(this.green2.frame.name === "Symbol 930001.png") {
 				this.green2.setFrame("Symbol 930002.png")
+				this.green2sound  = this.sound.add(`${this.genre}green2`, {
+					loop:true
+				});
+				this.green2sound.play()
 			} else {
 				this.green2.setFrame("Symbol 930001.png")
+				this.green2sound.stop()
 			}
 		},this)
 		this.green3.setInteractive().on("pointerup",()=> {
 			if(this.green3.frame.name === "Symbol 930001.png") {
 				this.green3.setFrame("Symbol 930002.png")
+				this.green3sound  = this.sound.add(`${this.genre}green3`, {
+					loop:true
+				});
+				this.green3sound.play()
 			} else {
 				this.green3.setFrame("Symbol 930001.png")
+				this.green3sound.stop()
 			}
 		},this)
 		this.green4.setInteractive().on("pointerup",()=> {
 			if(this.green4.frame.name === "Symbol 930001.png") {
 				this.green4.setFrame("Symbol 930002.png")
+				this.green4sound  = this.sound.add(`${this.genre}green4`, {
+					loop:true
+				});
+				this.green4sound.play()
 			} else {
 				this.green4.setFrame("Symbol 930001.png")
+				this.green4sound.stop()
 			}
 		},this)
 		this.green5.setInteractive().on("pointerup",()=> {
 			if(this.green5.frame.name === "Symbol 930001.png") {
 				this.green5.setFrame("Symbol 930002.png")
+				this.green5sound  = this.sound.add(`${this.genre}green5`, {
+					loop:true
+				});
+				this.green5sound.play()
 			} else {
 				this.green5.setFrame("Symbol 930001.png")
+				this.green5sound.stop()
 			}
 		},this)
 		this.purple1.setInteractive().on("pointerup",()=> {
 			if(this.purple1.frame.name === "Symbol 980001.png") {
 				this.purple1.setFrame("Symbol 980002.png")
+				this.purple1sound  = this.sound.add(`${this.genre}purple1`, {
+					loop:true
+				});
+				this.purple1sound.play()
 			} else {
 				this.purple1.setFrame("Symbol 980001.png")
+				this.purple1sound.stop()
 			}
 		},this)
 		this.purple2.setInteractive().on("pointerup",()=> {
 			if(this.purple2.frame.name === "Symbol 980001.png") {
 				this.purple2.setFrame("Symbol 980002.png")
+				this.purple2sound  = this.sound.add(`${this.genre}purple2`, {
+					loop:true
+				});
+				this.purple2sound.play()
 			} else {
 				this.purple2.setFrame("Symbol 980001.png")
+				this.purple2sound.stop()
 			}
 		},this)
 		this.purple3.setInteractive().on("pointerup",()=> {
 			if(this.purple3.frame.name === "Symbol 980001.png") {
 				this.purple3.setFrame("Symbol 980002.png")
+				this.purple3sound  = this.sound.add(`${this.genre}purple3`, {
+					loop:true
+				});
+				this.purple3sound.play()
 			} else {
 				this.purple3.setFrame("Symbol 980001.png")
+				this.purple3sound.stop()
 			}
 		},this)
 		this.purple4.setInteractive().on("pointerup",()=> {
 			if(this.purple4.frame.name === "Symbol 980001.png") {
 				this.purple4.setFrame("Symbol 980002.png")
+				this.purple4sound  = this.sound.add(`${this.genre}purple4`, {
+					loop:true
+				});
+				this.purple4sound.play()
 			} else {
 				this.purple4.setFrame("Symbol 980001.png")
+				this.purple4sound.stop()
 			}
 		},this)
 		this.purple5.setInteractive().on("pointerup",()=> {
 			if(this.purple5.frame.name === "Symbol 980001.png") {
 				this.purple5.setFrame("Symbol 980002.png")
+				this.purple5sound  = this.sound.add(`${this.genre}purple5`, {
+					loop:true
+				});
+				this.purple5sound.play()
 			} else {
 				this.purple5.setFrame("Symbol 980001.png")
+				this.purple5sound.stop()
 			}
 		},this)
 		this.pink1.setInteractive().on("pointerup",()=> {
 			if(this.pink1.frame.name === "Symbol 830001.png") {
 				this.pink1.setFrame("Symbol 830002.png")
+				this.pink1sound  = this.sound.add(`${this.genre}pink1`, {
+					loop:true
+				});
+				this.pink1sound.play()
+				
 			} else {
 				this.pink1.setFrame("Symbol 830001.png")
+				this.pink1sound.stop()
 			}
 		},this)
 		this.pink2.setInteractive().on("pointerup",()=> {
 			if(this.pink2.frame.name === "Symbol 830001.png") {
 				this.pink2.setFrame("Symbol 830002.png")
+				this.pink2sound  = this.sound.add(`${this.genre}pink2`, {
+					loop:true
+				});
+				this.pink2sound.play()
 			} else {
 				this.pink2.setFrame("Symbol 830001.png")
+				this.pink2sound.stop()
 			}
 		},this)
 		this.pink3.setInteractive().on("pointerup",()=> {
 			if(this.pink3.frame.name === "Symbol 830001.png") {
 				this.pink3.setFrame("Symbol 830002.png")
+				this.pink3sound  = this.sound.add(`${this.genre}pink3`, {
+					loop:true
+				});
+				this.pink3sound.play()
 			} else {
 				this.pink3.setFrame("Symbol 830001.png")
+				this.pink3sound.stop()
 			}
 		},this)
 		this.pink4.setInteractive().on("pointerup",()=> {
 			if(this.pink4.frame.name === "Symbol 830001.png") {
 				this.pink4.setFrame("Symbol 830002.png")
+				this.pink4sound  = this.sound.add(`${this.genre}pink4`, {
+					loop:true
+				});
+				this.pink4sound.play()
 			} else {
 				this.pink4.setFrame("Symbol 830001.png")
+				this.pink4sound.stop()
 			}
 		},this)
 		this.pink5.setInteractive().on("pointerup",()=> {
 			if(this.pink5.frame.name === "Symbol 830001.png") {
 				this.pink5.setFrame("Symbol 830002.png")
+				this.pink5sound  = this.sound.add(`${this.genre}pink5`, {
+					loop:true
+				});
+				this.pink5sound.play()
 			} else {
+				this.pink5sound.stop()
 				this.pink5.setFrame("Symbol 830001.png")
 			}
 		},this)
