@@ -193,13 +193,22 @@ class Game extends Phaser.Scene {
 
 	// Write your code here.
 	init(data) {
+		this.genre = data.genre
+		if (this.genre === "dubstep") {
+			this.songLength = 6
+		} else if(this.genre === "rock") {
+			this.songLength = 7
+		} else if (this.genre === "pop") {
+			this.songLength = 6
+		}else  {
+			this.songLength = 7
+		}
 		this.triggerTimer = this.time.addEvent({
 			callback: this.timerEvent,
 			callbackScope: this,
-			delay: 7000,
+			delay: this.songLength*1000,
 			loop: true
 		});
-		this.genre = data.genre
 		this.generated()
 		switch (this.genre) {
 			case "dubstep":
@@ -247,7 +256,7 @@ class Game extends Phaser.Scene {
 					loop: true, delay: 0, volume: 0.5
 				});
 					this.blue1sound.play({
-						seek : 7*this.triggerTimer.getProgress()
+						seek : this.songLength*this.triggerTimer.getProgress()
 					})
 			} else {
 				this.blue1.setFrame("Symbol 1030001.png")
@@ -261,7 +270,7 @@ class Game extends Phaser.Scene {
 					loop: true, delay: 0, volume: 0.5
 				});
 					this.blue2sound.play({
-						seek : 7*this.triggerTimer.getProgress()
+						seek : this.songLength*this.triggerTimer.getProgress()
 					})
 			} else {
 				this.blue2.setFrame("Symbol 1030001.png")
@@ -276,7 +285,7 @@ class Game extends Phaser.Scene {
 				});
 
 				this.blue3sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 			} else {
 				this.blue3.setFrame("Symbol 1030001.png")
@@ -291,7 +300,7 @@ class Game extends Phaser.Scene {
 				});
 
 				this.blue4sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 
 			} else {
@@ -306,7 +315,7 @@ class Game extends Phaser.Scene {
 					loop: true, delay: 0, volume: 0.5
 				});
 				this.blue5sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 			} else {
 				this.blue5.setFrame("Symbol 1030001.png")
@@ -321,7 +330,7 @@ class Game extends Phaser.Scene {
 				});
 
 				this.green1sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 			} else {
 				this.green1.setFrame("Symbol 930001.png")
@@ -336,7 +345,7 @@ class Game extends Phaser.Scene {
 				});
 
 				this.green2sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 
 			} else {
@@ -352,7 +361,7 @@ class Game extends Phaser.Scene {
 				});
 
 				this.green3sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 			} else {
 				this.green3.setFrame("Symbol 930001.png")
@@ -367,7 +376,7 @@ class Game extends Phaser.Scene {
 				});
 
 				this.green4sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 
 			} else {
@@ -382,7 +391,7 @@ class Game extends Phaser.Scene {
 					loop: true, delay: 0, volume: 0.5
 				});
 				this.green5sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 			} else {
 				this.green5.setFrame("Symbol 930001.png")
@@ -397,7 +406,7 @@ class Game extends Phaser.Scene {
 				});
 
 				this.purple1sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 			} else {
 				this.purple1.setFrame("Symbol 980001.png")
@@ -412,7 +421,7 @@ class Game extends Phaser.Scene {
 				});
 
 				this.purple2sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 			} else {
 				this.purple2.setFrame("Symbol 980001.png")
@@ -427,7 +436,7 @@ class Game extends Phaser.Scene {
 				});
 
 				this.purple3sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 			} else {
 				this.purple3.setFrame("Symbol 980001.png")
@@ -442,7 +451,7 @@ class Game extends Phaser.Scene {
 				});
 
 				this.purple4sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 
 			} else {
@@ -458,7 +467,7 @@ class Game extends Phaser.Scene {
 				});
 
 				this.purple5sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 			} else {
 				this.purple5.setFrame("Symbol 980001.png")
@@ -473,7 +482,7 @@ class Game extends Phaser.Scene {
 				});
 
 				this.pink1sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 			} else {
 				this.pink1.setFrame("Symbol 830001.png")
@@ -487,7 +496,7 @@ class Game extends Phaser.Scene {
 					loop: true, delay: 0, volume: 0.5
 				});
 				this.pink2sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 
 			} else {
@@ -503,7 +512,7 @@ class Game extends Phaser.Scene {
 				});
 
 				this.pink3sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 
 			} else {
@@ -518,7 +527,7 @@ class Game extends Phaser.Scene {
 					loop: true, delay: 0, volume: 0.5
 				});
 				this.pink4sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 
 
@@ -534,7 +543,7 @@ class Game extends Phaser.Scene {
 					loop: true, delay: 0, volume: 0.5
 				});
 				this.pink5sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 			} else {
 				this.pink5.setFrame("Symbol 830001.png")
@@ -549,7 +558,7 @@ class Game extends Phaser.Scene {
 				});
 
 				this.orange1sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 
 			} else {
@@ -566,7 +575,7 @@ class Game extends Phaser.Scene {
 				});
 
 				this.orange2sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 
 			} else {
@@ -582,7 +591,7 @@ class Game extends Phaser.Scene {
 				});
 
 				this.orange3sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 
 			} else {
@@ -598,7 +607,7 @@ class Game extends Phaser.Scene {
 				});
 
 				this.orange4sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 
 			} else {
@@ -614,7 +623,7 @@ class Game extends Phaser.Scene {
 				});
 
 				this.orange5sound.play({
-					seek: 7 * this.triggerTimer.getProgress()
+					seek: this.songLength * this.triggerTimer.getProgress()
 				})
 
 			} else {
