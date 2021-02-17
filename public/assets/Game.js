@@ -244,7 +244,7 @@ class Game extends Phaser.Scene {
 			if (this.blue1.frame.name === "Symbol 1030001.png") {
 				this.blue1.setFrame("Symbol 1030002.png")
 				this.blue1sound = this.sound.add(`${this.genre}blue1`, {
-					loop: true, delay: 0, seek: this.triggerTimer.getProgress()
+					loop: true, delay: 0, volume: 0.5
 				});
 					this.blue1sound.play({
 						seek : 7*this.triggerTimer.getProgress()
@@ -258,7 +258,7 @@ class Game extends Phaser.Scene {
 			if (this.blue2.frame.name === "Symbol 1030001.png") {
 				this.blue2.setFrame("Symbol 1030002.png")
 				this.blue2sound = this.sound.add(`${this.genre}blue2`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 					this.blue2sound.play({
 						seek : 7*this.triggerTimer.getProgress()
@@ -272,7 +272,7 @@ class Game extends Phaser.Scene {
 			if (this.blue3.frame.name === "Symbol 1030001.png") {
 				this.blue3.setFrame("Symbol 1030002.png")
 				this.blue3sound = this.sound.add(`${this.genre}blue3`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 
 				this.blue3sound.play({
@@ -287,7 +287,7 @@ class Game extends Phaser.Scene {
 			if (this.blue4.frame.name === "Symbol 1030001.png") {
 				this.blue4.setFrame("Symbol 1030002.png")
 				this.blue4sound = this.sound.add(`${this.genre}blue4`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 
 				this.blue4sound.play({
@@ -303,7 +303,7 @@ class Game extends Phaser.Scene {
 			if (this.blue5.frame.name === "Symbol 1030001.png") {
 				this.blue5.setFrame("Symbol 1030002.png")
 				this.blue5sound = this.sound.add(`${this.genre}blue5`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 				this.blue5sound.play({
 					seek: 7 * this.triggerTimer.getProgress()
@@ -317,7 +317,7 @@ class Game extends Phaser.Scene {
 			if (this.green1.frame.name === "Symbol 930001.png") {
 				this.green1.setFrame("Symbol 930002.png")
 				this.green1sound = this.sound.add(`${this.genre}green1`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 
 				this.green1sound.play({
@@ -332,7 +332,7 @@ class Game extends Phaser.Scene {
 			if (this.green2.frame.name === "Symbol 930001.png") {
 				this.green2.setFrame("Symbol 930002.png")
 				this.green2sound = this.sound.add(`${this.genre}green2`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 
 				this.green2sound.play({
@@ -348,7 +348,7 @@ class Game extends Phaser.Scene {
 			if (this.green3.frame.name === "Symbol 930001.png") {
 				this.green3.setFrame("Symbol 930002.png")
 				this.green3sound = this.sound.add(`${this.genre}green3`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 
 				this.green3sound.play({
@@ -363,7 +363,7 @@ class Game extends Phaser.Scene {
 			if (this.green4.frame.name === "Symbol 930001.png") {
 				this.green4.setFrame("Symbol 930002.png")
 				this.green4sound = this.sound.add(`${this.genre}green4`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 
 				this.green4sound.play({
@@ -379,7 +379,7 @@ class Game extends Phaser.Scene {
 			if (this.green5.frame.name === "Symbol 930001.png") {
 				this.green5.setFrame("Symbol 930002.png")
 				this.green5sound = this.sound.add(`${this.genre}green5`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 				this.green5sound.play({
 					seek: 7 * this.triggerTimer.getProgress()
@@ -393,7 +393,7 @@ class Game extends Phaser.Scene {
 			if (this.purple1.frame.name === "Symbol 980001.png") {
 				this.purple1.setFrame("Symbol 980002.png")
 				this.purple1sound = this.sound.add(`${this.genre}purple1`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 
 				this.purple1sound.play({
@@ -408,7 +408,7 @@ class Game extends Phaser.Scene {
 			if (this.purple2.frame.name === "Symbol 980001.png") {
 				this.purple2.setFrame("Symbol 980002.png")
 				this.purple2sound = this.sound.add(`${this.genre}purple2`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 
 				this.purple2sound.play({
@@ -423,7 +423,7 @@ class Game extends Phaser.Scene {
 			if (this.purple3.frame.name === "Symbol 980001.png") {
 				this.purple3.setFrame("Symbol 980002.png")
 				this.purple3sound = this.sound.add(`${this.genre}purple3`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 
 				this.purple3sound.play({
@@ -438,7 +438,7 @@ class Game extends Phaser.Scene {
 			if (this.purple4.frame.name === "Symbol 980001.png") {
 				this.purple4.setFrame("Symbol 980002.png")
 				this.purple4sound = this.sound.add(`${this.genre}purple4`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 
 				this.purple4sound.play({
@@ -454,7 +454,7 @@ class Game extends Phaser.Scene {
 			if (this.purple5.frame.name === "Symbol 980001.png") {
 				this.purple5.setFrame("Symbol 980002.png")
 				this.purple5sound = this.sound.add(`${this.genre}purple5`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 
 				this.purple5sound.play({
@@ -469,7 +469,7 @@ class Game extends Phaser.Scene {
 			if (this.pink1.frame.name === "Symbol 830001.png") {
 				this.pink1.setFrame("Symbol 830002.png")
 				this.pink1sound = this.sound.add(`${this.genre}pink1`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 
 				this.pink1sound.play({
@@ -484,7 +484,7 @@ class Game extends Phaser.Scene {
 			if (this.pink2.frame.name === "Symbol 830001.png") {
 				this.pink2.setFrame("Symbol 830002.png")
 				this.pink2sound = this.sound.add(`${this.genre}pink2`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 				this.pink2sound.play({
 					seek: 7 * this.triggerTimer.getProgress()
@@ -499,7 +499,7 @@ class Game extends Phaser.Scene {
 			if (this.pink3.frame.name === "Symbol 830001.png") {
 				this.pink3.setFrame("Symbol 830002.png")
 				this.pink3sound = this.sound.add(`${this.genre}pink3`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 
 				this.pink3sound.play({
@@ -515,7 +515,7 @@ class Game extends Phaser.Scene {
 			if (this.pink4.frame.name === "Symbol 830001.png") {
 				this.pink4.setFrame("Symbol 830002.png")
 				this.pink4sound = this.sound.add(`${this.genre}pink4`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 				this.pink4sound.play({
 					seek: 7 * this.triggerTimer.getProgress()
@@ -531,7 +531,7 @@ class Game extends Phaser.Scene {
 			if (this.pink5.frame.name === "Symbol 830001.png") {
 				this.pink5.setFrame("Symbol 830002.png")
 				this.pink5sound = this.sound.add(`${this.genre}pink5`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 				this.pink5sound.play({
 					seek: 7 * this.triggerTimer.getProgress()
@@ -545,7 +545,7 @@ class Game extends Phaser.Scene {
 			if (this.orange1.frame.name === "Symbol 880001.png") {
 				this.orange1.setFrame("Symbol 880002.png")
 				this.orange1sound = this.sound.add(`${this.genre}orange1`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 
 				this.orange1sound.play({
@@ -562,7 +562,7 @@ class Game extends Phaser.Scene {
 			if (this.orange2.frame.name === "Symbol 880001.png") {
 				this.orange2.setFrame("Symbol 880002.png")
 				this.orange2sound = this.sound.add(`${this.genre}orange2`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 
 				this.orange2sound.play({
@@ -578,7 +578,7 @@ class Game extends Phaser.Scene {
 			if (this.orange3.frame.name === "Symbol 880001.png") {
 				this.orange3.setFrame("Symbol 880002.png")
 				this.orange3sound = this.sound.add(`${this.genre}orange3`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 
 				this.orange3sound.play({
@@ -594,7 +594,7 @@ class Game extends Phaser.Scene {
 			if (this.orange4.frame.name === "Symbol 880001.png") {
 				this.orange4.setFrame("Symbol 880002.png")
 				this.orange4sound = this.sound.add(`${this.genre}orange4`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 
 				this.orange4sound.play({
@@ -610,7 +610,7 @@ class Game extends Phaser.Scene {
 			if (this.orange5.frame.name === "Symbol 880001.png") {
 				this.orange5.setFrame("Symbol 880002.png")
 				this.orange5sound = this.sound.add(`${this.genre}orange5`, {
-					loop: true, delay: 0
+					loop: true, delay: 0, volume: 0.5
 				});
 
 				this.orange5sound.play({

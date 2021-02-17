@@ -8,7 +8,7 @@ window.addEventListener('load', function () {
 		type: Phaser.AUTO,
 		backgroundColor: "#242424",
 		audio: {
-			disableWebAudio: true
+			disableWebAudio: true,
 		},
 		scale: {
 			mode: Phaser.Scale.FIT,
