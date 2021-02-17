@@ -246,6 +246,7 @@ class Game extends Phaser.Scene {
 				} else {
 					this.counter++
 					this.blue1sound.play()
+					this.conductor = "blue1"
 					this.blue1sound.on('looped', () => {
 						this.metronome.emit('hmm');
 					});
@@ -253,7 +254,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.blue1.setFrame("Symbol 1030001.png")
 				this.blue1sound.stop()
-				this.counter--
+				if (this.conductor === "blue1") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.blue2.setInteractive().on("pointerup", () => {
@@ -269,6 +274,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "blue2"
 					this.blue2sound.play()
 					this.blue2sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -277,7 +283,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.blue2.setFrame("Symbol 1030001.png")
 				this.blue2sound.stop()
-				this.counter--
+				if (this.conductor === "blue2") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.blue3.setInteractive().on("pointerup", () => {
@@ -293,6 +303,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "blue3"
 					this.blue3sound.play()
 					this.blue3sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -301,7 +312,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.blue3.setFrame("Symbol 1030001.png")
 				this.blue3sound.stop()
-				this.counter--
+				if (this.conductor === "blue3") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.blue4.setInteractive().on("pointerup", () => {
@@ -317,6 +332,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "blue3"
 					this.blue4sound.play()
 					this.blue4sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -325,7 +341,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.blue4.setFrame("Symbol 1030001.png")
 				this.blue4sound.stop()
-				this.counter--
+				if (this.conductor === "blue4") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.blue5.setInteractive().on("pointerup", () => {
@@ -341,6 +361,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "blue5"
 					this.blue5sound.play()
 					this.blue5sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -349,7 +370,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.blue5.setFrame("Symbol 1030001.png")
 				this.blue5sound.stop()
-				this.counter--
+				if (this.conductor === "blue5") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.green1.setInteractive().on("pointerup", () => {
@@ -365,6 +390,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "green1"
 					this.green1sound.play()
 					this.green1sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -373,7 +399,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.green1.setFrame("Symbol 930001.png")
 				this.green1sound.stop()
-				this.counter--
+				if (this.conductor === "green1") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.green2.setInteractive().on("pointerup", () => {
@@ -389,6 +419,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "green2"
 					this.green2sound.play()
 					this.green2sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -397,7 +428,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.green2.setFrame("Symbol 930001.png")
 				this.green2sound.stop()
-				this.counter--
+				if (this.conductor === "green2") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.green3.setInteractive().on("pointerup", () => {
@@ -413,6 +448,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "green3"
 					this.green3sound.play()
 					this.green3sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -421,7 +457,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.green3.setFrame("Symbol 930001.png")
 				this.green3sound.stop()
-				this.counter--
+				if (this.conductor === "green3") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.green4.setInteractive().on("pointerup", () => {
@@ -437,6 +477,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "green4"
 					this.green4sound.play()
 					this.green4sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -445,7 +486,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.green4.setFrame("Symbol 930001.png")
 				this.green4sound.stop()
-				this.counter--
+				if (this.conductor === "green4") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.green5.setInteractive().on("pointerup", () => {
@@ -461,6 +506,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "green5"
 					this.green5sound.play()
 					this.green5sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -469,7 +515,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.green5.setFrame("Symbol 930001.png")
 				this.green5sound.stop()
-				this.counter--
+				if (this.conductor === "green5") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.purple1.setInteractive().on("pointerup", () => {
@@ -485,6 +535,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "purple1"
 					this.purple1sound.play()
 					this.purple1sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -493,7 +544,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.purple1.setFrame("Symbol 980001.png")
 				this.purple1sound.stop()
-				this.counter--
+				if (this.conductor === "purple1") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.purple2.setInteractive().on("pointerup", () => {
@@ -509,6 +564,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "purple2"
 					this.purple2sound.play()
 					this.purple2sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -517,7 +573,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.purple2.setFrame("Symbol 980001.png")
 				this.purple2sound.stop()
-				this.counter--
+				if (this.conductor === "purple2") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.purple3.setInteractive().on("pointerup", () => {
@@ -533,6 +593,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "purple3"
 					this.purple3sound.play()
 					this.purple3sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -541,7 +602,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.purple3.setFrame("Symbol 980001.png")
 				this.purple3sound.stop()
-				this.counter--
+				if (this.conductor === "purple3") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.purple4.setInteractive().on("pointerup", () => {
@@ -556,8 +621,9 @@ class Game extends Phaser.Scene {
 						this.counter++
 					}, this);
 				} else {
-					this.purple4sound.play()
 					this.counter++
+					this.conductor = "purple4"
+					this.purple4sound.play()
 					this.purple4sound.on('looped', () => {
 						this.metronome.emit('hmm');
 					});
@@ -565,7 +631,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.purple4.setFrame("Symbol 980001.png")
 				this.purple4sound.stop()
-				this.counter--
+				if (this.conductor === "purple4") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.purple5.setInteractive().on("pointerup", () => {
@@ -581,6 +651,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "purple5"
 					this.purple5sound.play()
 					this.purple5sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -589,7 +660,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.purple5.setFrame("Symbol 980001.png")
 				this.purple5sound.stop()
-				this.counter--
+				if (this.conductor === "purple5") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.pink1.setInteractive().on("pointerup", () => {
@@ -605,6 +680,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "pink1"
 					this.pink1sound.play()
 					this.pink1sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -614,7 +690,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.pink1.setFrame("Symbol 830001.png")
 				this.pink1sound.stop()
-				this.counter--
+				if (this.conductor === "pink1") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.pink2.setInteractive().on("pointerup", () => {
@@ -630,6 +710,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "pink2"
 					this.pink2sound.play()
 					this.pink2sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -638,7 +719,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.pink2.setFrame("Symbol 830001.png")
 				this.pink2sound.stop()
-				this.counter--
+				if (this.conductor === "pink2") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.pink3.setInteractive().on("pointerup", () => {
@@ -654,6 +739,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "pink3"
 					this.pink3sound.play()
 					this.pink3sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -662,7 +748,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.pink3.setFrame("Symbol 830001.png")
 				this.pink3sound.stop()
-				this.counter--
+				if (this.conductor === "pink3") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.pink4.setInteractive().on("pointerup", () => {
@@ -678,6 +768,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "pink4"
 					this.pink4sound.play()
 					this.pink4sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -686,7 +777,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.pink4.setFrame("Symbol 830001.png")
 				this.pink4sound.stop()
-				this.counter--
+				if (this.conductor === "pink4") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.pink5.setInteractive().on("pointerup", () => {
@@ -702,6 +797,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "pink5"
 					this.pink5sound.play()
 					this.pink5sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -710,7 +806,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.pink5.setFrame("Symbol 830001.png")
 				this.pink5sound.stop()
-				this.counter--
+				if (this.conductor === "pink5") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.orange1.setInteractive().on("pointerup", () => {
@@ -726,6 +826,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "orange1"
 					this.orange1sound.play()
 					this.orange1sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -734,7 +835,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.orange1.setFrame("Symbol 880001.png")
 				this.orange1sound.stop()
-				this.counter--
+				if (this.conductor === "orange1") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 				
 			}
 		}, this)
@@ -751,6 +856,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "orange2"
 					this.orange2sound.play()
 					this.orange2sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -759,7 +865,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.orange2.setFrame("Symbol 880001.png")
 				this.orange2sound.stop()
-				this.counter--
+				if (this.conductor === "orange2") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.orange3.setInteractive().on("pointerup", () => {
@@ -775,6 +885,7 @@ class Game extends Phaser.Scene {
 					}, this);
 				} else {
 					this.counter++
+					this.conductor = "orange3"
 					this.orange3sound.play()
 					this.orange3sound.on('looped', () => {
 						this.metronome.emit('hmm');
@@ -783,7 +894,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.orange3.setFrame("Symbol 880001.png")
 				this.orange3sound.stop()
-				this.counter--
+				if (this.conductor === "orange3") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.orange4.setInteractive().on("pointerup", () => {
@@ -798,8 +913,9 @@ class Game extends Phaser.Scene {
 						this.counter++
 					}, this);
 				} else {
-					this.orange4sound.play()
 					this.counter++
+					this.conductor = "orange4"
+					this.orange4sound.play()
 					this.orange4sound.on('looped', () => {
 						this.metronome.emit('hmm');
 					});
@@ -807,7 +923,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.orange4.setFrame("Symbol 880001.png")
 				this.orange4sound.stop()
-				this.counter--
+				if (this.conductor === "orange4") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 		this.orange5.setInteractive().on("pointerup", () => {
@@ -822,8 +942,9 @@ class Game extends Phaser.Scene {
 						this.counter++
 					}, this);
 				} else {
-					this.orange5sound.play()
 					this.counter++
+					this.conductor = "orange5"
+					this.orange5sound.play()
 					this.orange5sound.on('looped', () => {
 						this.metronome.emit('hmm');
 					});
@@ -831,7 +952,11 @@ class Game extends Phaser.Scene {
 			} else {
 				this.orange5.setFrame("Symbol 880001.png")
 				this.orange5sound.stop()
-				this.counter--
+				if (this.conductor === "orange5") {
+					this.counter = 0
+				} else {
+					this.counter--
+				}
 			}
 		}, this)
 	}
