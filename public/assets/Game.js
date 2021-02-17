@@ -239,16 +239,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.blue1sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.blue1sound.play()
+					this.blue1sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.blue1sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.blue1.setFrame("Symbol 1030001.png")
 				this.blue1sound.stop()
@@ -262,16 +263,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.blue2sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.blue2sound.play()
+					this.blue2sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.blue2sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.blue2.setFrame("Symbol 1030001.png")
 				this.blue2sound.stop()
@@ -285,16 +287,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.blue3sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.blue3sound.play()
+					this.blue3sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.blue3sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.blue3.setFrame("Symbol 1030001.png")
 				this.blue3sound.stop()
@@ -308,16 +311,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.blue4sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.blue4sound.play()
+					this.blue4sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.blue4sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.blue4.setFrame("Symbol 1030001.png")
 				this.blue4sound.stop()
@@ -331,16 +335,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.blue5sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.blue5sound.play()
+					this.blue5sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.blue5sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.blue5.setFrame("Symbol 1030001.png")
 				this.blue5sound.stop()
@@ -354,16 +359,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.green1sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.green1sound.play()
+					this.green1sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.green1sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.green1.setFrame("Symbol 930001.png")
 				this.green1sound.stop()
@@ -377,16 +383,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.green2sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.green2sound.play()
+					this.green2sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.green2sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.green2.setFrame("Symbol 930001.png")
 				this.green2sound.stop()
@@ -400,16 +407,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.green3sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.green3sound.play()
+					this.green3sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.green3sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.green3.setFrame("Symbol 930001.png")
 				this.green3sound.stop()
@@ -423,16 +431,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.green4sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.green4sound.play()
+					this.green4sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.green4sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.green4.setFrame("Symbol 930001.png")
 				this.green4sound.stop()
@@ -446,16 +455,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.green5sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.green5sound.play()
+					this.green5sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.green5sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.green5.setFrame("Symbol 930001.png")
 				this.green5sound.stop()
@@ -469,16 +479,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.purple1sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.purple1sound.play()
+					this.purple1sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.purple1sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.purple1.setFrame("Symbol 980001.png")
 				this.purple1sound.stop()
@@ -492,16 +503,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.purple2sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.purple2sound.play()
+					this.purple2sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.purple2sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.purple2.setFrame("Symbol 980001.png")
 				this.purple2sound.stop()
@@ -515,16 +527,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.purple3sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.purple3sound.play()
+					this.purple3sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.purple3sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.purple3.setFrame("Symbol 980001.png")
 				this.purple3sound.stop()
@@ -538,16 +551,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
 						this.purple4sound.play()
+						this.counter++
 					}, this);
 				} else {
 					this.purple4sound.play()
+					this.counter++
+					this.purple4sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.purple4sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.purple4.setFrame("Symbol 980001.png")
 				this.purple4sound.stop()
@@ -561,16 +575,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.purple5sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.purple5sound.play()
+					this.purple5sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.purple5sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.purple5.setFrame("Symbol 980001.png")
 				this.purple5sound.stop()
@@ -584,16 +599,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.pink1sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.pink1sound.play()
+					this.pink1sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.pink1sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 
 			} else {
 				this.pink1.setFrame("Symbol 830001.png")
@@ -608,16 +624,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.pink2sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.pink2sound.play()
+					this.pink2sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.pink2sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.pink2.setFrame("Symbol 830001.png")
 				this.pink2sound.stop()
@@ -631,16 +648,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.pink3sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.pink3sound.play()
+					this.pink3sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.pink3sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.pink3.setFrame("Symbol 830001.png")
 				this.pink3sound.stop()
@@ -654,16 +672,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.pink4sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.pink4sound.play()
+					this.pink4sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.pink4sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.pink4.setFrame("Symbol 830001.png")
 				this.pink4sound.stop()
@@ -677,16 +696,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.pink5sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.pink5sound.play()
+					this.pink5sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.pink5sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.pink5.setFrame("Symbol 830001.png")
 				this.pink5sound.stop()
@@ -700,16 +720,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.orange1sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.orange1sound.play()
+					this.orange1sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.orange1sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.orange1.setFrame("Symbol 880001.png")
 				this.orange1sound.stop()
@@ -724,16 +745,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.orange2sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.orange2sound.play()
+					this.orange2sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.orange2sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.orange2.setFrame("Symbol 880001.png")
 				this.orange2sound.stop()
@@ -747,16 +769,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
+						this.counter++
 						this.orange3sound.play()
 					}, this);
 				} else {
+					this.counter++
 					this.orange3sound.play()
+					this.orange3sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.orange3sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.orange3.setFrame("Symbol 880001.png")
 				this.orange3sound.stop()
@@ -770,16 +793,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
 						this.orange4sound.play()
+						this.counter++
 					}, this);
 				} else {
 					this.orange4sound.play()
+					this.counter++
+					this.orange4sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.orange4sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.orange4.setFrame("Symbol 880001.png")
 				this.orange4sound.stop()
@@ -793,16 +817,17 @@ class Game extends Phaser.Scene {
 					loop: true
 				});
 				if (this.counter > 0) {
-					this.metronome.on('hmm', ()=> {
+					this.metronome.once('hmm', ()=> {
 						this.orange5sound.play()
+						this.counter++
 					}, this);
 				} else {
 					this.orange5sound.play()
+					this.counter++
+					this.orange5sound.on('looped', () => {
+						this.metronome.emit('hmm');
+					});
 				}
-				this.counter++
-				this.orange5sound.once('looped', () => {
-					this.metronome.emit('hmm');
-				});
 			} else {
 				this.orange5.setFrame("Symbol 880001.png")
 				this.orange5sound.stop()
